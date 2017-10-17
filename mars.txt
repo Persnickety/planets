@@ -6,4 +6,11 @@ git config --help
 git init
 git status
 
+git add
+	to begin tracking or to stage changes
+
+git commit -m "message"
+
+git log
+
 
