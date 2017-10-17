@@ -3,16 +3,45 @@ Mars is cold and dry
 
 git config --help
 
-git init
-	build hidden directory in pwd
-git status
+git init  	:   build hidden directory in the pwd as a repo
+git status  :   show the current state of the repo
 
-git add
-	to begin tracking or to stage changes
+git add     : to begin tracking a file or to stage changes to a file
+	git add [dirname]  : stage every file in a directory
+	git add .       : stage every change to every file from the current directory down 
 
-git commit -m "message"
+git commit -m "message"   : put staging area into repo as HEAD
 
-git log
-	all commits
+git log     :	list all commits
+	git log --oneline       nicer view
 
 
+
+git diff :	show diffs
+	git diff [hash]    :between HEAD and the given commit hash
+	git diff HEAD~2
+	git diff [filename]
+
+git rm --cached [filename]	:	take file out of staging area
+
+git checkout [hash] [files]
+	if you get into headless state by not specifying files, use   	git checkout master
+ 
+In .gitignore
+    rules are read in order
+    *.dat
+    !b.dat
+    reports/
+    
+    
+    
+
+
+    git remote add origin https://github.com/Persnickety/planets.git
+    git remote -v   :shows urls of push and pull
+    
+    
+    git push -u origin master    :push upstream to origin from master
+    git pull origin master
+    
+    
