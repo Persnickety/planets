@@ -4,6 +4,7 @@ Mars is cold and dry
 git config --help
 
 git init
+	build hidden directory in pwd
 git status
 
 git add
@@ -12,5 +13,6 @@ git add
 git commit -m "message"
 
 git log
+	all commits
 
 
