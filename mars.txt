@@ -1,0 +1,9 @@
+Mars is cold and dry
+
+
+git config --help
+
+git init
+git status
+
+
